@@ -1,0 +1,29 @@
+select dataset <mock standard ds info>
+input - limit to sub, ses, task, 
+auto add level(s?). if there are runs then groupby run subject, if there are no run but sessions add sessions, if all else fails add subject
+    - model x - all the predictors we have seen? auto type to GLM.
+    - contrasts - list, multi select with weights...
+    - dummy contrast button like neuroscout to auto create verbose contrasts
+
+edges - leave off? one track models only?
+
+Run
+_events.tsv file corresponding to the image file
+_stim.tsv.gz file corresponding to the image file
+_physio.tsv.gz file corresponding to the image file
+_timeseries.tsv file corresponding to the image file
+
+Session
+_scans.tsv file corresponding to the session
+
+Subject
+_sessions.tsv file corresponding to the subject
+
+Dataset
+_participants.tsv corresponding to the entire dataset
+
+xformz...
+
+react-jsonschema-form - in order to get the select multiple fields we want based on dataset information we'd need to modify the schema on the fly changing types to enums with the observed values.
+
+
